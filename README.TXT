@@ -1,6 +1,11 @@
-*
-* The code is released under the GNU General Public License.
+
+* This code is released under the GNU General Public License.
 * Developed by Mark Williams
-* A guide to this code can be found here; http://marks-space.com/2013/04/22/845/
 * Created 28th April 2013
+
+This program will enable your Raspberry Pi to read the values from a gyroscope and accelerometer and convert them to usable angles.
+Go here for more information;
+http://marks-space.com/2013/04/22/845/
+
+
 
