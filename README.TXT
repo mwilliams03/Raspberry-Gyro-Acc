@@ -8,4 +8,10 @@ Go here for more information;
 http://marks-space.com/2013/04/22/845/
 
 
+Requires WiringPi
+
+Compile with;
+gcc -o main -l rt main.c -l wiringPi -lm
+
+
 
