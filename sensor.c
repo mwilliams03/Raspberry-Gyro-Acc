@@ -1,4 +1,3 @@
-
 #include "i2c-dev.h"
 #include "L3G.h"
 #include "LSM303.h"
@@ -36,7 +35,7 @@ void readACC(int  *a)
 {
  	uint8_t block[6];
         selectDevice(file,ACC_ADDRESS);
-
+	// DLHC: register address order is X,Z,Y with high bytes first
 	readBlock(0x80 | LSM303_OUT_X_L_A, sizeof(block), block);
 
         *a = (int16_t)(block[0] | block[1] << 8) >> 4;
@@ -58,7 +57,7 @@ void readMAG(int  *m)
 void readGYR(int *g)
 {
 	uint8_t block[6];
-	// DLHC: register address order is X,Z,Y with high bytes first
+
         selectDevice(file,GYR_ADDRESS);
 
 	readBlock(0x80 | L3G_OUT_X_L, sizeof(block), block);
