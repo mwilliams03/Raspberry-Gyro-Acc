@@ -35,8 +35,7 @@ void readACC(int  *a)
 {
  	uint8_t block[6];
         selectDevice(file,ACC_ADDRESS);
-	// DLHC: register address order is X,Z,Y with high bytes first
-	readBlock(0x80 | LSM303_OUT_X_L_A, sizeof(block), block);
+		readBlock(0x80 | LSM303_OUT_X_L_A, sizeof(block), block);
 
         *a = (int16_t)(block[0] | block[1] << 8) >> 4;
         *(a+1) = (int16_t)(block[2] | block[3] << 8) >> 4;
@@ -47,7 +46,7 @@ void readMAG(int  *m)
 {
 	uint8_t block[6];
         selectDevice(file,MAG_ADDRESS);
-
+	// DLHC: register address order is X,Z,Y with high bytes first
 	readBlock(0x80 | LSM303_OUT_X_H_M, sizeof(block), block);
 
        	*m = (int16_t)(block[1] | block[0] << 8);
