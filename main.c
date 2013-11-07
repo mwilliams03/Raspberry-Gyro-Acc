@@ -130,7 +130,7 @@ int main(int argc, char *argv[])
 
 	//Convert Accelerometer values to degrees
 	AccXangle = (float) (atan2(*(acc_raw+1),*(acc_raw+2))+M_PI)*RAD_TO_DEG;
-	AccYangle = (float) (atan2(*acc_raw,*(acc_raw+2))+M_PI)*RAD_TO_DEG;
+	AccYangle = (float) (atan2(*(acc_raw+2),*acc_raw)+M_PI)*RAD_TO_DEG;
 
 
 	//Change the rotation value of the accelerometer to -/+ 180
