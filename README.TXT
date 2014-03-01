@@ -1,4 +1,3 @@
-
 * This code is released under the GNU General Public License.
 * Developed by Mark Williams
 * Created 28th April 2013
@@ -10,7 +9,7 @@ http://marks-space.com/2013/04/29/guide-to-interfacing-a-gyro-and-accelerometer-
 Requires WiringPi
 
 Compile with;
-gcc -o main -l rt main.c -l wiringPi -lm
+gcc -o main -l rt main.c -lm
 
 
 
