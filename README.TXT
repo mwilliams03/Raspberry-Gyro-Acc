@@ -4,7 +4,8 @@
 
 This program will enable your Raspberry Pi to read the values from a gyroscope and accelerometer and convert them to usable angles.
 Go here for more information;
-http://ozzmaker.com/2013/04/29/guide-to-interfacing-a-gyro-and-accelerometer-with-a-raspberry-pi/
+http://ozzmaker.com/guide-to-interfacing-a-gyro-and-accelerometer-with-a-raspberry-pi/
+
 
 Requires WiringPi
 
