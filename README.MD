@@ -6,6 +6,11 @@ This program will enable your Raspberry Pi to read the values from a gyroscope a
 Go here for more information;
 http://ozzmaker.com/guide-to-interfacing-a-gyro-and-accelerometer-with-a-raspberry-pi/
 
+'#########################################
+
+Updated and more indepth code can be found here (https://github.com/mwilliams03/BerryIMU)
+
+'#########################################
 
 Requires WiringPi
 
